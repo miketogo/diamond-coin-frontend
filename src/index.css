@@ -11,3 +11,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@import url(./assets/normalize.css);
+@import url(./assets/fonts/craftwork-grotesk/stylesheet.css);
