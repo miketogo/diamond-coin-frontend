@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 
 import MenuPopup from '../MenuPopup/MenuPopup';
 import Header from '../Header/Header';
-import { withRouter } from "react-router-dom";
+import { withRouter, Switch, Route } from "react-router-dom";
 import './App.css';
+import Main from "../Main/Main";
 
 
 const links = [
@@ -54,6 +55,11 @@ export default withRouter(function App({ location }) {
     <div className="app">
       <MenuPopup isMenuPopupOpen={isMenuPopupOpen} handleMenuCloseClick={handleMenuCloseClick} links={links} currentPath={currentPath} />
       <Header currentPath={currentPath} handleMenuOpenClick={handleMenuOpenClick} links={links} />
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route>
+      </Switch>
     </div>
   );
 })

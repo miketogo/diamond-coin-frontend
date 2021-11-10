@@ -1,0 +1,253 @@
+.overview {
+  display: flex;
+  flex-direction: row;
+  font-family: Craftwork Grotesk, Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin: 86px 0 149px;
+}
+
+.overview__intro {
+  margin: 0 65px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.overview__intro-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  /* or 83px */
+  /* main/300 */
+  color: #9A75FF;
+  margin: 0;
+}
+
+.overview__intro-title-span {
+  margin: 0 0 0 24px;
+}
+
+.overview__intro-title-diamond {
+  width: 74px;
+  height: 41px;
+}
+
+.overview__intro-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 180%;
+  /* or 43px */
+  color: #121212;
+  margin: 36px 0 0;
+  max-width: 785px;
+}
+
+.overview__intro-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 52px 0 0;
+}
+
+.overview__intro-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  margin: 0 43px 0 0;
+  color: #9A75FF;
+  text-decoration: none;
+}
+
+.overview__intro-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #9A75FF;
+  border-radius: 52px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.overview__intro-button-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.overview__coin-cap {
+  background: #FF88FF;
+  border-radius: 28px;
+  padding: 46px 58px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overview__coin-cap-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  /* or 42px */
+  text-align: center;
+  color: #121212;
+  margin: 0;
+}
+
+.overview__coin-cap-img {
+  margin: 44px 0 0;
+  width: 295px;
+  height: 268px;
+}
+
+.overview__coin-cap-price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  /* identical to box height, or 24px */
+  text-align: center;
+  color: #121212;
+  margin: 56px 0 0;
+  padding: 16px 32px;
+  background: #FFFFFF;
+  border-radius: 57px;
+}
+
+@media (max-width: 1505px) {
+  .overview {
+    margin: 50px 0 72px;
+  }
+  .overview__intro-title-diamond {
+    width: 46px;
+    height: 26px;
+  }
+  .overview__intro-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 130%;
+  }
+  .overview__intro-title-span {
+    margin: 0 0 0 16px;
+  }
+  .overview__intro-text {
+    margin: 21px 0 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    max-width: 400px;
+  }
+  .overview__intro-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 20px 0 0;
+  }
+  .overview__intro-button-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+  }
+  .overview__intro-button {
+    border-radius: 47px;
+    padding: 20px 24px;
+  }
+  .overview__intro-links {
+    margin: 40px 0 0;
+  }
+  .overview__coin-cap {
+    padding: 40px 27px 25px;
+  }
+  .overview__coin-cap-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .overview__coin-cap-img {
+    width: 168px;
+    height: 153px;
+    margin: 38px 0 0;
+  }
+  .overview__coin-cap-price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    margin: 40px 0 0;
+  }
+}
+
+@media (max-width: 910px) {
+  .overview {
+    margin: 35px 0 24px;
+    flex-direction: column;
+  }
+  .overview__intro {
+    margin: 0;
+  }
+  .overview__intro-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+  }
+  .overview__intro-title-diamond {
+    width: 34px;
+    height: 19px;
+  }
+  .overview__intro-title-span {
+    margin: 0 0 0 9px;
+  }
+  .overview__intro-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+    margin: 16px 0 0;
+    text-align: center;
+  }
+  .overview__intro-links {
+    margin: 36px 0 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .overview__intro-link {
+    margin: 0;
+  }
+  .overview__intro-button {
+    padding: 16px 0;
+    width: 100%;
+    max-width: 400px;
+    margin: 30px 0 0;
+  }
+  .overview__coin-cap {
+    margin: 40px 0 0;
+    width: 100%;
+    padding: 28px 0 20px;
+  }
+  .overview__coin-cap-price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    padding: 12px 16px;
+    margin: 24px 0 0;
+  }
+  .overview__coin-cap-img{
+    margin: 24px 0 0;
+  }
+}

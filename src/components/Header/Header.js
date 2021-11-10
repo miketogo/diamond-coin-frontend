@@ -24,7 +24,7 @@ function Header(props) {
         </a>
 
       </div> */}
-      <Link exact to="/" className="header__logo">
+      <Link to="/" className="header__logo">
         <svg className="header__logo-icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M44.5 22.5C44.5 34.6503 34.6503 44.5 22.5 44.5C10.3497 44.5 0.5 34.6503 0.5 22.5C0.5 10.3497 10.3497 0.5 22.5 0.5C34.6503 0.5 44.5 10.3497 44.5 22.5Z" stroke="#855CF8" />
           <path d="M17.3719 9.52586L22.6693 1L28.215 9.53175M17.3719 9.52586L7.09449 7.48413L10.0218 17.0984L9.98661 17.1208M17.3719 9.52586L22.6693 22.5M17.3719 9.52586L14.3448 2.11207M28.215 9.53175L37.6983 7.30172L35.2768 17.4148M28.215 9.53175L22.6693 22.5M28.215 9.53175L31.1339 2.70635M35.2768 17.4148L44 22.5L35.1969 27.619L35.2022 27.6386M35.2768 17.4148L22.6693 22.5M35.2768 17.4148L42.8879 14.3448M35.2022 27.6386L37.9055 37.5159L27.9776 35.127M35.2022 27.6386L22.6693 22.5M35.2022 27.6386L42.6457 30.6905M27.9776 35.127L23.0079 44L17.6112 35.2457M27.9776 35.127L22.6693 22.5M27.9776 35.127L31.1339 42.6349M17.6112 35.2457L7.77165 37.8571L10.0218 27.9016L9.9981 27.8883M17.6112 35.2457L22.6693 22.5M17.6112 35.2457L14.5433 42.9762M9.9981 27.8883L1 22.8413L9.98661 17.1208M9.9981 27.8883L22.6693 22.5M9.9981 27.8883L2.21564 31.1977M9.98661 17.1208L2.30883 13.8644M9.98661 17.1208L22.6693 22.5" stroke="#855CF8" />
@@ -35,7 +35,12 @@ function Header(props) {
       <div className="header__links">
         {props.links.map((item, i) => (
           <div className="header__link" key={`header__link${i}`}>
-            <NavLink exact to={item.link} className="header__link-text" activeClassName='header__link-text_active'>{item.text}</NavLink>
+            {item.link === "/" ?
+              <NavLink exact to={item.link} className="header__link-text" activeClassName='header__link-text_active'>{item.text}</NavLink>
+              :
+              <NavLink to={item.link} className="header__link-text" activeClassName='header__link-text_active'>{item.text}</NavLink>
+            }
+
             <div className={`header__link-square ${props.currentPath === item.link ? 'header__link-square_active' : ''}`}></div>
           </div>
         ))}

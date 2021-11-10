@@ -16,7 +16,7 @@ function MenuPopup(props) {
           </svg>
 
         </div>
-        <Link exact to="/" className="menu-popup__logo"  onClick={props.handleMenuCloseClick}>
+        <Link to="/" className="menu-popup__logo" onClick={props.handleMenuCloseClick}>
           <svg className="menu-popup__logo-icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M44.5 22.5C44.5 34.6503 34.6503 44.5 22.5 44.5C10.3497 44.5 0.5 34.6503 0.5 22.5C0.5 10.3497 10.3497 0.5 22.5 0.5C34.6503 0.5 44.5 10.3497 44.5 22.5Z" stroke="#855CF8" />
             <path d="M17.3719 9.52586L22.6693 1L28.215 9.53175M17.3719 9.52586L7.09449 7.48413L10.0218 17.0984L9.98661 17.1208M17.3719 9.52586L22.6693 22.5M17.3719 9.52586L14.3448 2.11207M28.215 9.53175L37.6983 7.30172L35.2768 17.4148M28.215 9.53175L22.6693 22.5M28.215 9.53175L31.1339 2.70635M35.2768 17.4148L44 22.5L35.1969 27.619L35.2022 27.6386M35.2768 17.4148L22.6693 22.5M35.2768 17.4148L42.8879 14.3448M35.2022 27.6386L37.9055 37.5159L27.9776 35.127M35.2022 27.6386L22.6693 22.5M35.2022 27.6386L42.6457 30.6905M27.9776 35.127L23.0079 44L17.6112 35.2457M27.9776 35.127L22.6693 22.5M27.9776 35.127L31.1339 42.6349M17.6112 35.2457L7.77165 37.8571L10.0218 27.9016L9.9981 27.8883M17.6112 35.2457L22.6693 22.5M17.6112 35.2457L14.5433 42.9762M9.9981 27.8883L1 22.8413L9.98661 17.1208M9.9981 27.8883L22.6693 22.5M9.9981 27.8883L2.21564 31.1977M9.98661 17.1208L2.30883 13.8644M9.98661 17.1208L22.6693 22.5" stroke="#855CF8" />
@@ -28,7 +28,12 @@ function MenuPopup(props) {
           {props.links.map((item, i) => (
             <div className="menu-popup__link" key={`menu-popup__link${i}`}>
               <div className={`menu-popup__link-square ${props.currentPath === item.link ? 'menu-popup__link-square_active' : ''}`}></div>
-              <NavLink exact to={item.link} className="menu-popup__link-text" activeClassName='menu-popup__link-text_active' onClick={props.handleMenuCloseClick}>{item.text}</NavLink>
+              {item.link === "/" ?
+                <NavLink exact to={item.link} className="menu-popup__link-text" activeClassName='menu-popup__link-text_active' onClick={props.handleMenuCloseClick}>{item.text}</NavLink>
+                :
+                <NavLink to={item.link} className="menu-popup__link-text" activeClassName='menu-popup__link-text_active' onClick={props.handleMenuCloseClick}>{item.text}</NavLink>
+              }
+
 
             </div>
           ))}
@@ -45,12 +50,12 @@ function MenuPopup(props) {
           </a>
           <a target="_blank" rel="noreferrer" href="/#" className="menu-popup__social-link">
             <svg className="menu-popup__social-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path className="menu-popup__social-icon-stroke" d="M15 28.0664C7.7835 28.0664 1.93335 22.2163 1.93335 14.9998C1.93335 7.78325 7.7835 1.93311 15 1.93311C22.2165 1.93311 28.0667 7.78325 28.0667 14.9998C28.0667 22.2163 22.2165 28.0664 15 28.0664ZM15 28.0664V13.1331C15 11.0712 16.6715 9.39977 18.7333 9.39977H19.6667M10.3333 16.8664H19.6667" stroke="#855CF8" stroke-width="2" />
+              <path className="menu-popup__social-icon-stroke" d="M15 28.0664C7.7835 28.0664 1.93335 22.2163 1.93335 14.9998C1.93335 7.78325 7.7835 1.93311 15 1.93311C22.2165 1.93311 28.0667 7.78325 28.0667 14.9998C28.0667 22.2163 22.2165 28.0664 15 28.0664ZM15 28.0664V13.1331C15 11.0712 16.6715 9.39977 18.7333 9.39977H19.6667M10.3333 16.8664H19.6667" stroke="#855CF8" strokeWidth="2" />
             </svg>
           </a>
           <a target="_blank" rel="noreferrer" href="/#" className="menu-popup__social-link">
             <svg className="menu-popup__social-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path className="menu-popup__social-icon-stroke" d="M9.40002 9.39977L15 16.8664L20.6 9.39977M9.40002 9.39977H6.60002M9.40002 9.39977V21.5331M20.6 9.39977H23.4M20.6 9.39977V21.5331M6.60002 20.5998H12.2M17.8 20.5998H23.4M3.80002 1.93311H26.2C27.2309 1.93311 28.0667 2.76884 28.0667 3.79977V26.1998C28.0667 27.2307 27.2309 28.0664 26.2 28.0664H3.80002C2.76909 28.0664 1.93335 27.2307 1.93335 26.1998V3.79977C1.93335 2.76884 2.76908 1.93311 3.80002 1.93311Z" stroke="#855CF8" stroke-width="2" />
+              <path className="menu-popup__social-icon-stroke" d="M9.40002 9.39977L15 16.8664L20.6 9.39977M9.40002 9.39977H6.60002M9.40002 9.39977V21.5331M20.6 9.39977H23.4M20.6 9.39977V21.5331M6.60002 20.5998H12.2M17.8 20.5998H23.4M3.80002 1.93311H26.2C27.2309 1.93311 28.0667 2.76884 28.0667 3.79977V26.1998C28.0667 27.2307 27.2309 28.0664 26.2 28.0664H3.80002C2.76909 28.0664 1.93335 27.2307 1.93335 26.1998V3.79977C1.93335 2.76884 2.76908 1.93311 3.80002 1.93311Z" stroke="#855CF8" strokeWidth="2" />
             </svg>
           </a>
         </div>
