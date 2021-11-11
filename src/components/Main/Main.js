@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../Banner/Banner";
 import Gia from "./Gia/Gia";
+import Graph from "./Graph/Graph";
 import HowItWorks from "./HowItWorks/HowItWorks";
 
 
@@ -17,6 +18,7 @@ function Main() {
     <div className="main">
       <Overview />
       <Banner />
+      <Graph />
       <Gia />
       <HowItWorks />
       <UseCases />
