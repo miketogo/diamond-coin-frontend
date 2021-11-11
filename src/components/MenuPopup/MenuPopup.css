@@ -31,7 +31,8 @@
 }
 
 .menu-popup {
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   z-index: 1000;
   position: fixed;
   top: 0;

@@ -1,0 +1,223 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  background: #2D2D2D;
+  border-radius: 16px;
+  padding: 82px 40px 95px;
+  width: calc(100% - 40px * 2);
+  margin: 86px 0 0;
+  align-items: center;
+}
+
+.subscribe__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe__texts {
+  margin: 0 104px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  /* or 40px */
+  text-align: left;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.subscribe__text {
+  margin: 20px 0 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  /* or 24px */
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.subscribe__inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.subscribe__input-container {
+  border: 2px solid #E8E8E8;
+  padding: 26px 24px 26px 24px;
+  border-radius: 12px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin: 0 20px 0 0;
+}
+
+.subscribe__input {
+  caret-color: white;
+  -webkit-appearance: none;
+  width: 357px;
+  background-color: unset;
+  font: unset;
+  text-rendering: unset;
+  letter-spacing: unset;
+  word-spacing: unset;
+  text-transform: unset;
+  text-indent: unset;
+  text-shadow: unset;
+  display: unset;
+  appearance: unset;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.subscribe__input:focus {
+  outline: none;
+}
+
+.subscribe__input::placeholder {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: #707070;
+  margin: 0;
+}
+
+.subscribe__submit-button {
+  background: #9A75FF;
+  opacity: 0.3;
+  /* main/300 */
+  border: 1px solid #9A75FF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 201px;
+  height: 90px;
+  cursor: no-drop;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.subscribe__submit-button_ready {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.subscribe__submit-button_submitted {
+  cursor: default;
+  opacity: 1;
+  background: #00D823;
+  border: 1px solid #00D823;
+}
+
+.subscribe__submit-button-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  /* or 24px */
+  text-align: center;
+  color: #FFFFFF
+}
+
+@media (max-width: 1183px) {
+  .subscribe {
+    margin: 118px 0 0;
+    align-items: flex-start;
+    padding: 40px;
+    width: calc(100% - 40px * 2);
+  }
+  .subscribe__container {
+    flex-direction: column;
+  }
+  .subscribe__texts {
+    margin: 0;
+  }
+  .subscribe__inputs {
+    margin: 36px 0 0;
+  }
+  .subscribe__input-container {
+    margin: 0 24px 0 0;
+  }
+}
+
+@media (max-width: 839px) {
+  .subscribe {
+    margin: 12px 0 0;
+    align-items: center;
+    padding: 16px 10px 12px 10px;
+    width: calc(100% - 10px * 2);
+  }
+  .subscribe__container {
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+  }
+  .subscribe__inputs {
+    flex-direction: column;
+    margin: 24px 0 0;
+  }
+  .subscribe__input-container {
+    margin: 0;
+    width: calc(100% - 21px * 2 - 4px);
+    padding: 20px 21px;
+  }
+  .subscribe__input::placeholder {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .subscribe__input {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .subscribe__submit-button {
+    padding: 20px 0;
+    width: 100%;
+    margin: 9px 0 0;
+    height: unset;
+  }
+  .subscribe__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+  }
+  .subscribe__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    margin: 12px 0 0;
+    text-align: center;
+  }
+  .subscribe__submit-button-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .subscribe__submit-icon{
+    width: 30px;
+    height: 30px;
+  }
+  .subscribe__submit-button_submitted {
+    padding: 15px 0;
+  }
+}

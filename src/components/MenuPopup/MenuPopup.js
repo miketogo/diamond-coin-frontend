@@ -6,6 +6,10 @@ import './MenuPopup.css'
 
 
 function MenuPopup(props) {
+  React.useEffect(() => {
+    if(props.isMenuPopupOpen) document.body.style.overflow = 'hidden'
+    else document.body.style.overflow = 'unset';
+  }, [props.isMenuPopupOpen]);
   return (
     <div className={`menu-popup ${props.isMenuPopupOpen ? 'menu-popup_active' : ''}`}>
       <div className={`menu-popup__container ${props.isMenuPopupOpen ? 'menu-popup__container_active' : ''}`}>

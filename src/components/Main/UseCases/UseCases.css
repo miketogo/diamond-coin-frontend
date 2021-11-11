@@ -1,5 +1,5 @@
 .use-cases {
-  margin: 97px auto 0;
+  margin: 97px auto 34px;
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   grid-template-rows: 402px;
@@ -50,13 +50,18 @@
 
 @media (max-width: 1544px) {
   .use-cases {
-    margin: 84px 0 0;
+    margin: 84px auto 34px;
+  }
+}
+@media (max-width: 1183px){
+  .use-cases {
+    margin: 84px auto -66px;
   }
 }
 
 @media (max-width: 839px) {
   .use-cases {
-    margin: 63px 0 0;
+    margin: 63px auto 40px;
     grid-template-columns: 1fr;
     grid-template-rows: 232px;
     grid-auto-rows: 232px;

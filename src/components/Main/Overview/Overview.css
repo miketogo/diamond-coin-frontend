@@ -250,4 +250,7 @@
   .overview__coin-cap-img{
     margin: 24px 0 0;
   }
+  .overview__intro-title-text-span{
+    margin: 0 0 0 42px;
+  }
 }

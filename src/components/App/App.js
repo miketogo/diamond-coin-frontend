@@ -5,6 +5,8 @@ import Header from '../Header/Header';
 import { withRouter, Switch, Route } from "react-router-dom";
 import './App.css';
 import Main from "../Main/Main";
+import Subscribe from "../Subscribe/Subscribe";
+import Footer from "../Footer/Footer";
 
 
 const links = [
@@ -60,6 +62,8 @@ export default withRouter(function App({ location }) {
           <Main />
         </Route>
       </Switch>
+      <Subscribe />
+      <Footer links={links} />
     </div>
   );
 })
