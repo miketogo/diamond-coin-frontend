@@ -49,6 +49,11 @@
   padding: 20px 0;
   margin: 32px 0 0;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.banner__button:hover {
+  background-color: #e7e7e7;
 }
 
 .banner__button-text {
@@ -106,6 +111,11 @@
   /* identical to box height, or 28px */
   color: #FFFFFF;
   margin: 0 11px 0 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.banner__link:hover .banner__link-text {
+  color: #e7e7e7;
 }
 
 .banner__link-icon {

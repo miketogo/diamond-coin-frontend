@@ -38,7 +38,7 @@ function Gia() {
 
   return (
     <section className="gia">
-      <h2 className="gia__title">Every diamond is <span className="gia__title_span">GIA certified</span> and owners can asses certification at any time</h2>
+      <h2 className="gia__title">Every diamond is <a target="_blank" rel="noreferrer" href="/#" className="gia__title-link">GIA certified</a> and owners can asses certification at any time</h2>
       <p className="gia__text">After diamond is produced it goes through GIA certification in order to assure its quality and get estimated price from bank insurance</p>
       <div className="gia__container">
         <img className="gia__diamond" src={diamond} alt="diamond" />

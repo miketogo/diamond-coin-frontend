@@ -193,6 +193,8 @@
     height: unset;
   }
   .subscribe__title {
+    max-width: 215px;
+    margin: 0 auto;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
