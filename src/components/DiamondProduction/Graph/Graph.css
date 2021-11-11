@@ -1,0 +1,282 @@
+.graph-prod {
+  margin: 184px 0 146px;
+  display: flex;
+  flex-direction: column;
+}
+
+.graph-prod__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 130%;
+  /* or 68px */
+  text-align: center;
+  /* main/300 */
+  color: #9A75FF;
+  margin: 0;
+}
+
+.graph-prod__subtitle {
+  margin: 48px auto 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  /* identical to box height, or 24px */
+  color: #121212;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.graph-prod__histogram {
+  margin: 105px 0 0;
+  border: 1px solid rgba(154, 117, 255, 0.34);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+}
+
+.graph-prod__histogram-first-row {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(154, 117, 255, 0.34);
+}
+
+.graph-prod__histogram-first-row-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 192px;
+  height: 111px;
+  border-bottom: 1px solid rgba(154, 117, 255, 0.34);
+}
+
+.graph-prod__histogram-first-row-item:last-of-type {
+  border-bottom: none;
+}
+
+.graph-prod__histogram-first-row-item-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+  text-align: center;
+  color: #121212;
+  margin: 0;
+}
+
+.graph-prod__histogram-second-row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.graph-prod__histogram-second-row-lines {
+  z-index: 0;
+  width: 100%;
+  height: 111px;
+  border-bottom: 1px solid rgba(154, 117, 255, 0.34);
+}
+
+.graph-prod__histogram-second-row-lines_noneborder {
+  border: none;
+}
+
+.graph-prod__histogram-bar {
+  background: rgba(154, 117, 255, 0.2);
+  width: 100%;
+  height: 100%;
+  margin: 4px 0 0;
+  border-top: 3px solid #855CF8;
+  ;
+}
+
+.graph-prod__histogram-bar-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  /* identical to box height */
+  text-align: center;
+  /* main/500 */
+  color: #855CF8;
+  margin: 0;
+}
+
+.graph-prod__histogram-bar-container {
+  width: calc(25% - 1px);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+}
+
+.graph-prod__histogram-bar-container_1 {
+  height: 25%;
+  left: 0;
+
+}
+
+.graph-prod__histogram-bar-container_2 {
+  height: 45%;
+  left: calc(25% * 1);
+
+}
+
+.graph-prod__histogram-bar-container_3 {
+  height: 65%;
+  left: calc(25% * 2);
+
+}
+
+.graph-prod__histogram-bar-container_4 {
+  height: 105%;
+  width: calc(100% - 25% * 3);
+  left: calc(25% * 3);
+
+}
+
+.graph-prod__histogram-bar-container_5 {
+  height: 65%;
+  left: calc(16.6% * 4);
+
+}
+
+.graph-prod__histogram-bar-container_6 {
+  height: 75%;
+  width: calc(100% - 16.6% * 5);
+  left: calc(16.6% * 5);
+
+}
+
+.graph-prod__histogram-years {
+  display: flex;
+  flex-direction: row;
+  margin: 17px 0 0;
+}
+
+.graph-prod__histogram-year-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(25%);
+}
+
+.graph-prod__histogram-years-plug {
+  width: 224px;
+}
+
+.graph-prod__histogram-year-container:last-of-type {
+  width: calc(100% - 25% * 3);
+}
+
+.graph-prod__histogram-years-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.graph-prod__histogram-year-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  /* or 16px */
+  text-align: center;
+  color: #121212;
+  margin: 0;
+}
+
+@media (max-width: 1144px) {
+  .graph-prod {
+    margin: 130px 0 92px;
+  }
+  .graph-prod__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+  }
+  .graph-prod__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 24px auto 0;
+    max-width: 700px;
+  }
+  .graph-prod__histogram {
+    margin: 36px 0 0;
+  }
+  .graph-prod__histogram-first-row-item {
+    width: 105px;
+  }
+  .graph-prod__histogram-years-plug {
+    width: 121px;
+  }
+}
+
+@media (max-width: 704px) {
+  .graph-prod {
+    margin: 64px 0 32px;
+  }
+  .graph-prod__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+  }
+  .graph-prod__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 20px auto 0;
+    max-width: 400px;
+  }
+  .graph-prod__histogram {
+    margin: 32px 0 0;
+  }
+  .graph-prod__histogram-first-row-item {
+    width: 40px;
+  }
+  .graph-prod__histogram-years-plug {
+    width: 40px;
+  }
+  .graph-prod__histogram-first-row-item-text {
+    transform: rotate(270deg);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .graph-prod__histogram-bar-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .graph-prod__histogram-bar {
+    margin: 1px 0 0;
+  }
+  .graph-prod__histogram-year-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .graph-prod__histogram-bar-container_1 {
+    height: 23%;
+  }
+  .graph-prod__histogram-bar-container_2 {
+    height: 43%;
+  }
+  .graph-prod__histogram-bar-container_3 {
+    height: 63%;
+  }
+  .graph-prod__histogram-bar-container_4 {
+    height: 103%;
+  }
+}

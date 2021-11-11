@@ -7,6 +7,7 @@ import './App.css';
 import Main from "../Main/Main";
 import Subscribe from "../Subscribe/Subscribe";
 import Footer from "../Footer/Footer";
+import DiamondProduction from "../DiamondProduction/DiamondProduction";
 
 
 const links = [
@@ -60,6 +61,9 @@ export default withRouter(function App({ location }) {
       <Switch>
         <Route exact path="/">
           <Main />
+        </Route>
+        <Route path="/diamond-production">
+          <DiamondProduction />
         </Route>
       </Switch>
       <Subscribe />
