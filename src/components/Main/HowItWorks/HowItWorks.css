@@ -27,7 +27,10 @@
   margin: 64px 0 0;
   max-width: 1067px;
 }
-
+.how-it-works__text-span{
+  word-wrap: none;
+  white-space: nowrap;
+}
 .how-it-works__stages {
   margin: 32px 0 0;
   display: grid;

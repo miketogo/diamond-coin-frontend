@@ -1,4 +1,5 @@
 .banner {
+  z-index: 1;
   font-family: Craftwork Grotesk, Arial, Helvetica, sans-serif;
   background: #855CF8;
   border-radius: 28px;

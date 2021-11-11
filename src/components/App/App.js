@@ -8,6 +8,7 @@ import Main from "../Main/Main";
 import Subscribe from "../Subscribe/Subscribe";
 import Footer from "../Footer/Footer";
 import DiamondProduction from "../DiamondProduction/DiamondProduction";
+import Technology from "../Technology/Technology";
 
 
 const links = [
@@ -64,6 +65,9 @@ export default withRouter(function App({ location }) {
         </Route>
         <Route path="/diamond-production">
           <DiamondProduction />
+        </Route>
+        <Route path="/technology">
+          <Technology />
         </Route>
       </Switch>
       <Subscribe />
