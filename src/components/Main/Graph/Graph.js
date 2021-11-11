@@ -32,7 +32,7 @@ function Graph() {
           <div className="graph__histogram-second-row-lines"></div>
           <div className="graph__histogram-second-row-lines"></div>
           <div className="graph__histogram-second-row-lines"></div>
-          <div className="graph__histogram-second-row-lines"></div>
+          <div className="graph__histogram-second-row-lines graph__histogram-second-row-lines_noneborder"></div>
           <div className="graph__histogram-bar-container graph__histogram-bar-container_1">
             <p className="graph__histogram-bar-text">+1.7%</p>
             <div className="graph__histogram-bar"></div>
