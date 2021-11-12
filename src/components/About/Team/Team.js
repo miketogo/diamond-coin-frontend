@@ -1,6 +1,5 @@
 import React from "react";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 import './Team.css';
 
@@ -37,14 +36,7 @@ function Team() {
       {cards.map((item, i) => (
         <div className="team__card" key={`team__card${i}`}>
           <div className="team__card-image-container">
-            <LazyLoadImage
-              placeholderSrc={item.img}
-              alt={item.name}
-              effect="blur"
-              src={item.img}
-              className="team__card-image"
-            />
-
+            <img className="team__card-image" src={item.img} alt={item.name} />
           </div>
           <p className="team__card-post">{item.post}</p>
           <p className="team__card-name">{item.name}</p>
