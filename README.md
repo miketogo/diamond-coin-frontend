@@ -5,24 +5,6 @@
 
 ### ✨ [Demo](https://wizardly-meninsky-8a1865.netlify.app/)
 
-## Install
-
-```sh
-npm install
-```
-
-## Usage
-
-```sh
-npm run start
-```
-
-## Run tests
-
-```sh
-npm run test
-```
-
 ## Author
 
 👤 **CabaTech**
