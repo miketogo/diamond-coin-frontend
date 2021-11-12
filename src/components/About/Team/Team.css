@@ -1,0 +1,114 @@
+.team {
+  margin: 60px auto 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(433px, 1fr));
+  grid-template-rows: 418px;
+  grid-auto-rows: 418px;
+  row-gap: 140px;
+  column-gap: 20px;
+  max-width: calc(100% - 60px * 2);
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.team__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__card-image-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 5px solid #855CF8;
+  width: 180px;
+  overflow: hidden;
+  height: 180px;
+}
+
+.team__card-image {
+  width: 120%;
+  height: 120%;
+  margin: -10% 0 0 -10%;
+}
+
+.team__card-post {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #121212;
+  opacity: 0.6;
+  margin: 24px 0 0;
+}
+
+.team__card-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  /* identical to box height, or 42px */
+  text-align: center;
+  /* main/500 */
+  color: #855CF8;
+  margin: 12px 0 0;
+}
+
+.team__card-description {
+  max-width: 433px;
+  margin: 16px 0 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}
+
+@media (max-width: 1606px) {
+  .team {
+    margin: 72px auto 91px;
+    grid-template-columns: 433px;
+    row-gap: 115px;
+    justify-content: center;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 584px) {
+  .team {
+    margin: 54px auto 80px;
+    grid-template-columns: 1fr;
+    row-gap: 80px;
+    justify-content: center;
+    max-width: 100%;
+    grid-template-rows: 363px;
+    grid-auto-rows: 363px;
+  }
+  .team__card-post {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 12px 0 0;
+  }
+  .team__card-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    margin: 12px 0 0;
+  }
+  .team__card-description {
+    max-width: calc(100% - 3px * 2);
+    margin: 12px 0 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

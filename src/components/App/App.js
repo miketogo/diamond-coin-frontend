@@ -1,14 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
+
+
+import { withRouter, Switch, Route } from "react-router-dom";
+import './App.css';
 
 import MenuPopup from '../MenuPopup/MenuPopup';
 import Header from '../Header/Header';
-import { withRouter, Switch, Route } from "react-router-dom";
-import './App.css';
-import Main from "../Main/Main";
 import Subscribe from "../Subscribe/Subscribe";
 import Footer from "../Footer/Footer";
-import DiamondProduction from "../DiamondProduction/DiamondProduction";
-import Technology from "../Technology/Technology";
+import Preloader from "../Preloader/Preloader";
+import PageNotFound from "../PageNotFound/PageNotFound";
+
+const Main = React.lazy(() => import('../Main/Main'));
+const DiamondProduction = React.lazy(() => import('../DiamondProduction/DiamondProduction'));
+const Technology = React.lazy(() => import('../Technology/Technology'));
+const About = React.lazy(() => import('../About/About'));
 
 
 const links = [
@@ -24,10 +30,7 @@ const links = [
     text: 'Technology',
     link: '/technology'
   },
-  {
-    text: 'Assurance',
-    link: '/assurance'
-  },
+
   {
     text: 'About',
     link: '/about'
@@ -61,13 +64,29 @@ export default withRouter(function App({ location }) {
       <Header currentPath={currentPath} handleMenuOpenClick={handleMenuOpenClick} links={links} />
       <Switch>
         <Route exact path="/">
-          <Main />
+          <Suspense fallback={<Preloader />}>
+            <Main />
+          </Suspense>
         </Route>
         <Route path="/diamond-production">
-          <DiamondProduction />
+          <Suspense fallback={<Preloader />}>
+            <DiamondProduction />
+          </Suspense>
         </Route>
         <Route path="/technology">
-          <Technology />
+          <Suspense fallback={<Preloader />}>
+            <Technology />
+          </Suspense>
+        </Route>
+        <Route path="/about">
+          <Suspense fallback={<Preloader />}>
+            <About />
+          </Suspense>
+        </Route>
+        <Route path="*">
+          <Suspense fallback={<Preloader />}>
+            <PageNotFound />
+          </Suspense>
         </Route>
       </Switch>
       <Subscribe />
