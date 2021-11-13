@@ -29,7 +29,7 @@ const cards = [
   {
     icon: card4,
     title: "Cut grade",
-    text: "[пока нетъ]",
+    text: "",
   },
 ]
 
