@@ -13,7 +13,7 @@ function Algorithm() {
     <section className="algorithm">
       <div className="algorithm__texts">
         <h2 className="algorithm__title">To facilitate the stability of the Coin, <span className="algorithm__title-span">proportional–integral–derivative</span> controller (PID) algorithm is used</h2>
-        <p className="algorithm__text">PID is a control loop mechanism that combines three functions to maintain a particular value. Since there is no <span className="algorithm__text-span">open-source</span> market value of <span className="algorithm__text-span">lab-grown</span> diamonds, for example, Stock market price. There is no direct <span className="algorithm__text-span">real-time</span> value that the Coin can be connected to<br /><br />Therefore we created our value controller based on three factors for:</p>
+        <p className="algorithm__text">PID is a control loop mechanism that combines three functions to maintain a particular value. Since there is no <span className="algorithm__text-span">open-source</span> market value of <span className="algorithm__text-span">lab-grown</span> diamonds, for example, Stock market price. There is no direct <span className="algorithm__text-span">real-time</span> value that the Coin can be connected to<br /><br />Therefore we created our value controller based on three factors:</p>
         <ul className="algorithm__ul">
           <li className="algorithm__li">USD</li>
           <li className="algorithm__li">Insurance price of diamonds</li>

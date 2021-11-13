@@ -17,7 +17,7 @@ function BankStorage() {
         <img className="bank-storage__vault-shadow" src={shadow} alt="shadow" />
       </div>
       <div className="bank-storage__texts">
-        <h2 className="bank-storage__title">All produced diamonds stored in a bank vault and can be redeemed with bought tokens</h2>
+        <h2 className="bank-storage__title">All produced diamonds are stored in a bank vault and can be redeemed with bought tokens</h2>
         <div className="bank-storage__list-items">
           <div className="bank-storage__list-item">
             <div className="bank-storage__list-marker"></div>
