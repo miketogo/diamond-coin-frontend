@@ -25,7 +25,7 @@
   text-align: center;
   color: #121212;
   margin: 64px 0 0;
-  max-width: 1067px;
+  max-width: 1163px;
 }
 .how-it-works__text-span{
   word-wrap: none;
@@ -105,7 +105,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    max-width: 534px;
+    max-width: 593px;
     margin: 20px 0 0;
   }
   .how-it-works__stages {
@@ -131,7 +131,7 @@
     font-size: 12px;
     line-height: 14px;
     text-align: center;
-    max-width: 70%;
+    max-width: 80%;
 
   }
   .how-it-works__stages {

@@ -35,7 +35,7 @@ const stages = [
   {
     img: stage5,
     title: "Minting",
-    text: "Per each 1 carat we mint coin that can be exchanged for a real diamond",
+    text: "Per each 1 carat we mint coins that can be exchanged for a real diamond",
   },
   {
     img: stage6,
@@ -53,7 +53,7 @@ function HowItWorks() {
   return (
     <section className="how-it-works">
       <h2 className="how-it-works__title">How it works?</h2>
-      <p className="how-it-works__text">On monthly basis we add new diamonds to the collateral<br />and mint new coins each coin equals to 1 carat of colored diamond <span className="how-it-works__text-span">(K-V)</span><br />and with a minimum clarity of VVS</p>
+      <p className="how-it-works__text">On monthly basis we add new diamonds to the collateral<br />and mint new coins each 100 coins equals to 1 carat of colored diamond <span className="how-it-works__text-span">(K-V)</span><br />and with a minimum clarity of <span className="how-it-works__text-span">VVS</span></p>
       <div className="how-it-works__stages">
         {stages.map((item, i) => (
           <div className="how-it-works__stage" key={`how-it-works__stage${i}`}>

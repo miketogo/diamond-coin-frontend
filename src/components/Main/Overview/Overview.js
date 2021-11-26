@@ -34,7 +34,7 @@ function Overview() {
       <div className="overview__coin-cap">
         <p className="overview__coin-cap-title">Each BDR coin represents<br />the price of 1 carat</p>
         <img className="overview__coin-cap-img" src={coins} alt="coins" />
-        <p className="overview__coin-cap-price">$14 000 = 2 BDR = 1 ct. diamond</p>
+        <p className="overview__coin-cap-price">$14 000 = 200 BDR = 2 ct. diamond</p>
       </div>
     </section>
   );

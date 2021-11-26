@@ -25,7 +25,7 @@ function BankStorage() {
           </div>
           <div className="bank-storage__list-item">
             <div className="bank-storage__list-marker"></div>
-            <p className="bank-storage__list-text">Each coin repreents 1 diamond carat</p>
+            <p className="bank-storage__list-text">Each coin repreents 2 carat diamond</p>
           </div>
         </div>
 
